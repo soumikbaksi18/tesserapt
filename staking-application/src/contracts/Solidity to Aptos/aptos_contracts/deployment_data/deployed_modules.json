@@ -1,0 +1,3 @@
+﻿{
+  "Error": "API error: Unknown error Per anonymous IP rate limit exceeded. Limit: 50000 compute units per 300 seconds window. This means you have hit your per IP compute unit limit. If you are using a dapp, it means the dapp you are using is not using API keys. If you are the developer of this dapp, please start using API keys for your services, both frontend and backend. Get started at https://geomi.dev/docs/start"
+}

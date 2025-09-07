@@ -1,0 +1,18 @@
+﻿{
+    "profile_name":  "bitmax_testnet",
+    "deployment_date":  "2025-09-06T22:13:22Z",
+    "network":  "testnet",
+    "maturity_timestamp":  1759768979,
+    "contracts":  {
+                      "staking_dapp":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::staking_dapp",
+                      "yield_tokenization":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yield_tokenization",
+                      "standardized_wrapper":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::standardized_wrapper",
+                      "yt_auto_converter":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_auto_converter",
+                      "yt_token":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_token",
+                      "price_oracle":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::price_oracle",
+                      "simple_amm":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::simple_amm",
+                      "pt_token":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::pt_token"
+                  },
+    "deployer_address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b",
+    "status":  "deployed_successfully"
+}

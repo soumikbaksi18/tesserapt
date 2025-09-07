@@ -1,0 +1,139 @@
+{
+  "contracts": {
+    "yield_tokenization": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yield_tokenization",
+      "description": "Core protocol for splitting SY tokens into PT and YT tokens",
+      "functions": [
+        "initialize(admin: &signer, base_name: String, base_symbol: String)",
+        "create_maturity(admin: &signer, maturity_timestamp: u64)",
+        "split_tokens<SYCoin>(user: &signer, amount: u64, maturity: u64)",
+        "redeem_tokens<SYCoin>(user: &signer, amount: u64, maturity: u64)",
+        "pause(admin: &signer)",
+        "unpause(admin: &signer)"
+      ],
+      "view_functions": [
+        "get_maturities(): vector<u64>",
+        "is_paused(): bool"
+      ]
+    },
+    "standardized_wrapper": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::standardized_wrapper",
+      "description": "Entry point for users to wrap multiple tokens into SY tokens",
+      "functions": [
+        "initialize(admin: &signer, name: String, symbol: String, yield_rate_bps: u64)",
+        "configure_token(admin: &signer, index: u64, ratio: u64, is_enabled: bool)",
+        "wrap_tokens<Token0, Token1>(user: &signer, amount0: u64, amount1: u64)",
+        "unwrap_tokens<Token0, Token1>(user: &signer, amount: u64)",
+        "set_yield_rate(admin: &signer, new_rate: u64)",
+        "pause(admin: &signer)",
+        "unpause(admin: &signer)"
+      ],
+      "view_functions": [
+        "get_yield_rate(): u64",
+        "get_token_count(): u64"
+      ]
+    },
+    "staking_dapp": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::staking_dapp",
+      "description": "Staking contract that provides yield source for the protocol",
+      "functions": [
+        "initialize<StakingToken>(admin: &signer, reward_name: vector<u8>, reward_symbol: vector<u8>)",
+        "stake<StakingToken>(user: &signer, amount: u64)",
+        "unstake<StakingToken>(user: &signer, amount: u64)",
+        "claim_rewards(user: &signer)",
+        "pause(admin: &signer)",
+        "unpause(admin: &signer)"
+      ],
+      "view_functions": [
+        "calculate_reward(user: address): u64",
+        "get_total_rewards(user: address): u64",
+        "get_staked_amount(user: address): u64"
+      ]
+    },
+    "price_oracle": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::price_oracle",
+      "description": "Price oracle with multiple price sources and validation",
+      "functions": [
+        "initialize(admin: &signer)",
+        "add_price_updater(admin: &signer, updater: address)",
+        "update_price(updater: &signer, token: address, new_price: u64, confidence: u64)",
+        "set_threshold(setter: &signer, token: address, threshold: u64)",
+        "activate_circuit_breaker(admin: &signer)",
+        "reset_circuit_breaker(admin: &signer)"
+      ],
+      "view_functions": [
+        "get_price(token: address): u64",
+        "threshold_reached(token: address): bool"
+      ]
+    },
+    "simple_amm": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::simple_amm",
+      "description": "Automated Market Maker for PT/YT token pairs",
+      "functions": [
+        "initialize<TokenA, TokenB>(admin: &signer)",
+        "add_liquidity<TokenA, TokenB>(user: &signer, amount_a: u64, amount_b: u64)",
+        "swap_a_for_b<TokenA, TokenB>(user: &signer, amount_in: u64)",
+        "swap_b_for_a<TokenA, TokenB>(user: &signer, amount_in: u64)",
+        "set_fee<TokenA, TokenB>(admin: &signer, new_fee: u64)",
+        "pause<TokenA, TokenB>(admin: &signer)",
+        "unpause<TokenA, TokenB>(admin: &signer)"
+      ],
+      "view_functions": [
+        "get_amount_out(amount_in: u64, reserve_in: u64, reserve_out: u64, fee: u64): u64",
+        "get_reserves<TokenA, TokenB>(): (u64, u64)"
+      ]
+    },
+    "pt_token": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::pt_token",
+      "description": "Principal Token representing right to redeem original SY amount at maturity",
+      "functions": [
+        "initialize(owner: &signer, name: String, symbol: String, maturity: u64)",
+        "mint(owner: &signer, to: address, amount: u64)",
+        "burn_from(owner: &signer, from: address, amount: u64)"
+      ],
+      "view_functions": [
+        "get_maturity(): u64",
+        "is_mature(): bool"
+      ]
+    },
+    "yt_token": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_token",
+      "description": "Yield Token capturing all future yield until maturity",
+      "functions": [
+        "initialize(owner: &signer, name: String, symbol: String, maturity: u64)",
+        "mint(owner: &signer, to: address, amount: u64)",
+        "burn_from(owner: &signer, from: address, amount: u64)"
+      ],
+      "view_functions": [
+        "get_maturity(): u64",
+        "is_mature(): bool",
+        "is_accruing_yield(): bool"
+      ]
+    },
+    "yt_auto_converter": {
+      "address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_auto_converter",
+      "description": "AI-powered automation engine for YT to PT conversion",
+      "functions": [
+        "initialize(admin: &signer, oracle_address: address, tokenization_address: address, reference_token: address, amm_address: address)",
+        "configure(user: &signer, enabled: bool, threshold_price: u64)",
+        "add_maturity(user: &signer, maturity: u64)",
+        "remove_maturity(user: &signer, maturity: u64)",
+        "execute_conversion<YTToken, PTToken>(executor: &signer, user: address, maturity: u64, min_pt_amount: u64, deadline: u64)",
+        "set_conversion_fee(admin: &signer, new_fee: u64)",
+        "pause(admin: &signer)",
+        "unpause(admin: &signer)"
+      ],
+      "view_functions": [
+        "can_execute_conversion(user: address, maturity: u64): bool",
+        "get_user_maturities(user: address): vector<u64>",
+        "get_conversion_rate(): u64"
+      ]
+    }
+  },
+  "deployment_info": {
+    "network": "testnet",
+    "deployer_address": "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b",
+    "explorer_url": "https://explorer.aptoslabs.com/account/0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b?network=testnet",
+    "total_contracts": 8
+  }
+}

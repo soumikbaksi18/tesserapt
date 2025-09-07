@@ -1,0 +1,14 @@
+---
+profiles:
+  bitmax_testnet:
+    network: Testnet
+    private_key: ed25519-priv-0x5fbcf2a355d9c35f65de942b1ff62f58ca9689a0360171a3fc81d66dcf22042c
+    public_key: ed25519-pub-0x45dec0bafe442fcb250ae5a96c1de992d41e38e18b4999b2de55ce9abf34701e
+    account: 5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b
+    rest_url: "https://fullnode.testnet.aptoslabs.com"
+  default:
+    network: Testnet
+    private_key: ed25519-priv-0x5fbcf2a355d9c35f65de942b1ff62f58ca9689a0360171a3fc81d66dcf22042c
+    public_key: ed25519-pub-0x45dec0bafe442fcb250ae5a96c1de992d41e38e18b4999b2de55ce9abf34701e
+    account: 5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b
+    rest_url: "https://fullnode.testnet.aptoslabs.com"

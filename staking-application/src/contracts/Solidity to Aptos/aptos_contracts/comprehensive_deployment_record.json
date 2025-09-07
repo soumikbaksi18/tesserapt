@@ -1,0 +1,25 @@
+﻿{
+    "token_ratios":  {
+                         "token_2":  "30%",
+                         "token_0":  "60%",
+                         "token_1":  "40%",
+                         "token_4":  "10%",
+                         "token_3":  "20%"
+                     },
+    "contracts":  {
+                      "staking_dapp":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::staking_dapp",
+                      "yield_tokenization":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yield_tokenization",
+                      "standardized_wrapper":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::standardized_wrapper",
+                      "yt_auto_converter":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_auto_converter",
+                      "yt_token":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_token",
+                      "price_oracle":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::price_oracle",
+                      "simple_amm":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::simple_amm",
+                      "pt_token":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::pt_token"
+                  },
+    "deployer_address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b",
+    "deployment_date":  "2025-09-07T03:33:11Z",
+    "status":  "all_contracts_deployed_successfully",
+    "profile_name":  "bitmax_testnet",
+    "maturity_timestamp":  1759788142,
+    "network":  "testnet"
+}

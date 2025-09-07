@@ -1,0 +1,70 @@
+﻿{
+    "profile_name":  "bitmax_testnet",
+    "deployment_date":  "2025-09-07T03:34:18Z",
+    "files":  {
+                  "deployment_summary":  "deployment_summary.json",
+                  "deployed_modules":  "deployed_modules.json",
+                  "transaction_history":  "transaction_history.json"
+              },
+    "network":  "testnet",
+    "contracts":  {
+                      "staking_dapp":  {
+                                           "state_file":  "staking_dapp_state.json",
+                                           "functions_file":  "staking_dapp_functions.json",
+                                           "bytecode_file":  "staking_dapp_bytecode.json",
+                                           "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::staking_dapp",
+                                           "abi_file":  "staking_dapp_abi.json"
+                                       },
+                      "yield_tokenization":  {
+                                                 "state_file":  "yield_tokenization_state.json",
+                                                 "functions_file":  "yield_tokenization_functions.json",
+                                                 "bytecode_file":  "yield_tokenization_bytecode.json",
+                                                 "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yield_tokenization",
+                                                 "abi_file":  "yield_tokenization_abi.json"
+                                             },
+                      "standardized_wrapper":  {
+                                                   "state_file":  "standardized_wrapper_state.json",
+                                                   "functions_file":  "standardized_wrapper_functions.json",
+                                                   "bytecode_file":  "standardized_wrapper_bytecode.json",
+                                                   "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::standardized_wrapper",
+                                                   "abi_file":  "standardized_wrapper_abi.json"
+                                               },
+                      "yt_auto_converter":  {
+                                                "state_file":  "yt_auto_converter_state.json",
+                                                "functions_file":  "yt_auto_converter_functions.json",
+                                                "bytecode_file":  "yt_auto_converter_bytecode.json",
+                                                "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_auto_converter",
+                                                "abi_file":  "yt_auto_converter_abi.json"
+                                            },
+                      "yt_token":  {
+                                       "state_file":  "yt_token_state.json",
+                                       "functions_file":  "yt_token_functions.json",
+                                       "bytecode_file":  "yt_token_bytecode.json",
+                                       "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::yt_token",
+                                       "abi_file":  "yt_token_abi.json"
+                                   },
+                      "price_oracle":  {
+                                           "state_file":  "price_oracle_state.json",
+                                           "functions_file":  "price_oracle_functions.json",
+                                           "bytecode_file":  "price_oracle_bytecode.json",
+                                           "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::price_oracle",
+                                           "abi_file":  "price_oracle_abi.json"
+                                       },
+                      "simple_amm":  {
+                                         "state_file":  "simple_amm_state.json",
+                                         "functions_file":  "simple_amm_functions.json",
+                                         "bytecode_file":  "simple_amm_bytecode.json",
+                                         "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::simple_amm",
+                                         "abi_file":  "simple_amm_abi.json"
+                                     },
+                      "pt_token":  {
+                                       "state_file":  "pt_token_state.json",
+                                       "functions_file":  "pt_token_functions.json",
+                                       "bytecode_file":  "pt_token_bytecode.json",
+                                       "address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b::pt_token",
+                                       "abi_file":  "pt_token_abi.json"
+                                   }
+                  },
+    "explorer_url":  "https://explorer.aptoslabs.com/account/=testnet",
+    "deployer_address":  "0x5e25225f13c79a741fa58f8db5c6c8aa4da5f5113553592c797a8d1588ddf01b"
+}
