@@ -32,7 +32,8 @@
 
 ### Trading Hub Dashboard
 ![Trading Hub]
-<img width="1280" height="607" alt="image" src="https://github.com/user-attachments/assets/c360c185-ae3f-44ef-84b9-ddd157368de4" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3fa61110-0b2e-4771-9e1e-506c51b3d5a3" />
+
 
 *Discover AI-powered investment opportunities and trade on live markets with real-time data*
 
