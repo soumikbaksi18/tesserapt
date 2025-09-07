@@ -24,15 +24,25 @@
 ## 🖼️ Screenshots
 
 ### AI Investment Advisor Modal
-![AI Investment Advisor](https://via.placeholder.com/800x600/1a1a1a/ffffff?text=AI+Investment+Advisor+Modal)
+![AI Investment Advisor]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1b03cb50-8e98-4aca-9a21-465e71fc6347" />
+
+
 *Choose between LP Pool Recommendations and PT/YT Split Optimization with AI-powered insights*
 
 ### Trading Hub Dashboard
-![Trading Hub](https://via.placeholder.com/1200x800/1a1a1a/ffffff?text=Trading+Hub+Dashboard)
+![Trading Hub]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3fa61110-0b2e-4771-9e1e-506c51b3d5a3" />
+
+
 *Discover AI-powered investment opportunities and trade on live markets with real-time data*
 
 ### Cyberpunk Cityscape
-![Cyberpunk Cityscape](https://via.placeholder.com/1200x600/1a1a1a/ffffff?text=Cyberpunk+Cityscape)
+![Cyberpunk Cityscape]
+<img width="1280" height="607" alt="image" src="https://github.com/user-attachments/assets/cea5cad5-a506-4a32-96d9-84ea739d3e62" />
+
+Unity Metaverse game repo : https://github.com/notoriousraj/TeseraptMetaVerse
+
 *Futuristic interface design with neon-lit aesthetics and advanced AI navigation*
 
 ## 🎥 Demo Video
