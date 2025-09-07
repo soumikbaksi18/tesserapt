@@ -24,15 +24,22 @@
 ## 🖼️ Screenshots
 
 ### AI Investment Advisor Modal
-![AI Investment Advisor](./mnt/data/fdb8ff16-3d0f-4115-b378-64bc87b26b4d.png)
+![AI Investment Advisor]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1b03cb50-8e98-4aca-9a21-465e71fc6347" />
+
+
 *Choose between LP Pool Recommendations and PT/YT Split Optimization with AI-powered insights*
 
 ### Trading Hub Dashboard
-![Trading Hub](./mnt/data/1a1d9997-9b1d-415b-b5d4-4e3ee1305adc.png)
+![Trading Hub]
+<img width="1280" height="607" alt="image" src="https://github.com/user-attachments/assets/c360c185-ae3f-44ef-84b9-ddd157368de4" />
+
 *Discover AI-powered investment opportunities and trade on live markets with real-time data*
 
 ### Cyberpunk Cityscape
-![Cyberpunk Cityscape](./mnt/data/dc95bc42-3487-4f71-8570-95593a16deac.png)
+![Cyberpunk Cityscape]
+<img width="1280" height="607" alt="image" src="https://github.com/user-attachments/assets/cea5cad5-a506-4a32-96d9-84ea739d3e62" />
+
 *Futuristic interface design with neon-lit aesthetics and advanced AI navigation*
 
 ## 🎥 Demo Video
