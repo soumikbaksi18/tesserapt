@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: fastapi-on-render
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: PORT
+        value: "9000"
+      - key: USER_AGENT
+        value: "BitmaxAI/1.0 (+https://fastapi-on-render)"
+
+      - key: CHAIN
+        value: "avalanche"
+      - key: LLAMA_YIELDS
+        value: "https://yields.llama.fi/pools"
+      - key: LLAMA_PRICES
+        value: "https://coins.llama.fi/prices/current"
+      - key: WAVAX_ADDR
+        value: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
+
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: "gpt-4o-mini"
+      - key: INCLUDE_NARRATIVE_DEFAULT
+        value: "true"
+
+      - key: MODEL_WINDOW
+        value: "30"
+      - key: MODEL_DEFAULT_DAYS
+        value: "120"
+
+      - key: PUBLIC_ORIGIN
+        value: "https://fastapi-on-render-3aji.onrender.com"
